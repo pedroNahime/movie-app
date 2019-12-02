@@ -9,6 +9,14 @@ export function* getMovie() {
         const {data} = yield call(api.get, `trending/all/day?api_key=${key}`);
         yield put(MoviesActions.successMovie(data))
     } catch (e) {
-        yield put(MoviesActions.errorMovie(e.response))
+        const {status_message, status_code} = e.response.data;
+        const response = {
+            status: e.response.status,
+            data: {
+                status_message,
+                status_code
+            }
+        };
+        yield put(MoviesActions.errorMovie(response))
     }
 }
