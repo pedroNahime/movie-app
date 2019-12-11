@@ -29,11 +29,11 @@ const List = props => {
   )
 }
 
-const mapStateToProps = state => ({
+export const mapStateToProps = state => ({
   movies: state.movies
 })
 
-const mapDispatchToProps = dispatch =>
+export const mapDispatchToProps = dispatch =>
   bindActionCreators(MoviesAction, dispatch)
 
 export default connect(mapStateToProps, mapDispatchToProps)(List)

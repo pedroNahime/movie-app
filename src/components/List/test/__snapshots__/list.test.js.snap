@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<List component/> render component 1`] = `
+<div>
+  <div
+    class="sc-bwzfXH jawXPz"
+  >
+    <h1
+      class="sc-htpNat gMpIXU"
+    >
+      Movies
+    </h1>
+    <div
+      class="sc-bxivhb joIOkd"
+    >
+      <a
+        class="sc-bdVaJa jKuiS"
+      />
+    </div>
+  </div>
+</div>
+`;

@@ -1,6 +1,8 @@
 const merge = require('webpack-merge')
 const path = require('path')
 const baseConfig = require('./webpack.config.base')
+const getPort = require('get-port')
+const { WebpackPluginServe: Serve } = require('webpack-plugin-serve')
 
 module.exports = merge(baseConfig, {
   mode: 'development',
@@ -8,10 +10,16 @@ module.exports = merge(baseConfig, {
     path: path.join(__dirname, 'public'),
     filename: 'app.bundle.js'
   },
-  devServer: {
-    port: 3000,
-    hot: true,
-    open: true
-  },
-  devtool: 'source-map'
+  devtool: 'source-map',
+  plugins: [
+    new Serve({
+      port: getPort(),
+      open: true,
+      host: 'localhost',
+      progress: false,
+      status: false,
+      static: path.join(__dirname, 'public')
+    })
+  ],
+  watch: true
 })

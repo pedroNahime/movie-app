@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header/> render the component 1`] = `
+<div>
+  <header
+    class="sc-bdVaJa dpMfXo"
+  >
+    <h1
+      class="sc-bwzfXH jcXdsQ"
+    >
+      Movie APP
+    </h1>
+    <div
+      class="sc-htpNat hmARpE"
+    >
+      <img
+        alt="Avatar"
+        src="https://avatars0.githubusercontent.com/u/24299941?s=460&v=4"
+      />
+      Pedro Nahime
+    </div>
+  </header>
+</div>
+`;

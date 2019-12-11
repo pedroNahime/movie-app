@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header/> render the component 1`] = `
+<div>
+  <a
+    class="sc-bdVaJa jKuiS"
+  >
+    <img
+      alt="some_title"
+      src="https://image.tmdb.org/t/p/original/some_path"
+    />
+    <strong>
+      some_title
+    </strong>
+  </a>
+</div>
+`;
